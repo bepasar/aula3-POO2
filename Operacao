@@ -13,6 +13,25 @@ public class Operacao {
 		this.num2 = 0;
 		this.resultado = 0;
 	}
+	double mediaPonderada(int a, int b,int c,int d) {
+		this.num1 = a;
+		this.num2 = b;
+		
+		return (((a*c) + (b*d))/(c+d));
+	}
+	
+	void fatorial(int numero) {
+		int fatorial = numero;
+		for(int i = 1; i < numero; i++) {
+			fatorial = fatorial*(numero-i);
+			
+		}
+		if(numero == 0){
+			this.resultado = 1;
+		}else{
+		this.resultado = fatorial;
+		}
+	}
 	
 	void soma() {
 		this.resultado = this.num1 + this.num2;	
