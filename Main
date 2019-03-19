@@ -9,6 +9,9 @@ public class Main {
 		n1 = input.nextInt();
 		System.out.println("Insira o segundo número inteiro");
 		n2 = input.nextInt();
+		System.out.println("Digite o peso de cada nota respectivamente");
+		int c = Integer.parseInt(s.nextLine());
+		int d = Integer.parseInt(s.nextLine());
 		
 		Operacao operacao = new Operacao(n1, n2);
 
@@ -22,6 +25,9 @@ public class Main {
 		System.out.println("O resultado da multiplicação dos números é: "+ res);
 
 		res = operacao.dividir(n1, n2);
-		System.out.println("O resultado da divisão dos números é: "+ res);	
+		System.out.println("O resultado da divisão dos números é: "+ res);
+		
+		operacao.fatorial(n1);
+		System.out.println("O resultado do fatorial de "+n1+" é: "+operacao.getResultado());
 	}
 }
