@@ -19,6 +19,26 @@ public class Operacao {
 		
 		return (((a*c) + (b*d))/(c+d));
 	}
+
+	double calcularPotencia() {
+	    int aux = 1;
+	    if (this.num1 == 0)
+	        this.resultado = 0;
+	    else
+	        if (this.num2 == 0)
+	           this.resultado = 1;
+	        else
+	        {
+	            for (int i=1; i<=this.num2; i++)
+	                aux = aux * this.num1;
+	            this.resultado = aux;
+	        }
+	    return this.resultado;
+	}
+	
+	void subtrair() {
+	    this.resultado = this.num1 - this.num2;
+	}
 	
 	void fatorial(int numero) {
 		int fatorial = numero;
