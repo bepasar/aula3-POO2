@@ -15,6 +15,12 @@ public class Main {
 		operacao.soma();
 		System.out.println("O resultado da soma é: "+ operacao.getResultado());
 		
+		operacao.subtrair();
+		System.out.println("O resultado da subtração é: "+ operacao.getResultado());
+		
+		res = operacao.calcularPotencia();
+		System.out.printf("\nO resultado da potencia de %d elevado a %d é: %.0f", n1, n2, res);
+		
 		operacao.calcularMedia(n1, n2);
 		System.out.println("A média dos números é: "+ operacao.getResultado());
 		
