@@ -2,7 +2,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		int n1, n2;
-		double res;
+		double res; //
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("Insira o primeiro número inteiro");
